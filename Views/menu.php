@@ -47,7 +47,7 @@ $rol = $_SESSION['rol'];
                                 <hr class="dropdown-divider">
                             </li>
                             <li class="dropdown-item text-danger d-flex align-items-center" style="cursor: pointer;">
-                                <i class="bi bi-box-arrow-right me-2"></i> Cerrar Sesión
+                                 <li><a class="dropdown-item text-danger" href="login.php">Cerrar Sesión</a></li>
                             </li>
                         </ul>
                     </li>
