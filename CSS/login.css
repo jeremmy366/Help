@@ -1,0 +1,18 @@
+/* Tarjeta de login */
+.login-card {
+    width: 400px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.login-icon {
+    font-size: 60px;
+    margin-bottom: 1rem;
+}
+
+/* Formulario de login */
+.login-form .form-control {
+    margin-bottom: 1rem;
+}

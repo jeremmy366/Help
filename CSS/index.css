@@ -1,0 +1,34 @@
+/* Encabezado hero */
+.hero-header {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    padding: 4rem 0;
+}
+
+/* Sección de características */
+/* Cambia .feature-item por .feature-section .feature-item para más especificidad */
+.feature-section .feature-item {
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    background-color: white;
+}
+
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+
+/* Sección de imágenes */
+.image-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* CTA */
+.cta-section {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    padding: 4rem 0;
+}

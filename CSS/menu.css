@@ -1,0 +1,25 @@
+/* Dropdown de usuario */
+.dropdown-menu {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+/* Tarjetas del menú */
+.feature-item {
+    flex: 1 0 300px;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,19 @@
+/* Tablas */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    padding: 12px;
+}
+
+/* Formularios de gestión */
+.management-form {
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
