@@ -1,4 +1,4 @@
-<?php
+<?php 
 session_start();
 
 // Verificar si el usuario ha iniciado sesión
@@ -17,8 +17,9 @@ $rol = $_SESSION['rol'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú Principal - Exportación de Flores</title>
-    <link rel="stylesheet" href="../lib/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="/Expor_Flores/CSS/estilos.css">
+    <!-- Iconos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -29,8 +30,17 @@ $rol = $_SESSION['rol'];
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><span class="nav-link text-white">Bienvenido, <?php echo $usuario; ?> (<?php echo $rol; ?>)</span></li>
-                    <li class="nav-item"><a class="nav-link text-danger" href="login.php">Cerrar Sesión</a></li>
+                    <!-- Dropdown para mostrar usuario y rol -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle"></i> Bienvenido, <?php echo $usuario; ?>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><span class="dropdown-item">Rol: <?php echo $rol; ?></span></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="login.php">Cerrar Sesión</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -110,7 +120,5 @@ $rol = $_SESSION['rol'];
     <footer class="bg-primary text-white text-center py-3 mt-5">
         <p>&copy; 2025 Exportación de Flores - Todos los derechos reservados</p>
     </footer>
-
-    <script src="../lib/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
