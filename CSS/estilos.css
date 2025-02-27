@@ -1,0 +1,33 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.custom-card {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.custom-button {
+    background-color: #28a745;
+    border-color: #28a745;
+    padding: 12px 20px;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.custom-footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    border-radius: 5px;
+}
