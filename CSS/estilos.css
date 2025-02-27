@@ -1,7 +1,6 @@
 /* Estilos globales */
 body {
     font-family: 'Roboto', sans-serif;
-    /* Requiere vincular la fuente desde Google Fonts */
     background-color: #f5f5f5;
     color: #333;
     margin: 0;
@@ -19,7 +18,6 @@ body {
 /* Barra de navegación */
 .navbar {
     background-color: #4CAF50;
-    /* Verde inspirado en la naturaleza */
     padding: 10px 20px;
     color: white;
     display: flex;
@@ -41,7 +39,6 @@ body {
 
 .navbar .logout {
     color: #ff4d4d;
-    /* Rojo suave para cerrar sesión */
     text-decoration: none;
 }
 
@@ -261,7 +258,6 @@ body {
 
 .table-primary {
     background-color: #e0f2e9;
-    /* Verde claro */
 }
 
 /* Footer */
@@ -362,4 +358,264 @@ img {
     max-width: 100%;
     height: auto;
     margin-bottom: 15px;
+}
+
+/* Estilos para el dropdown del menú */
+.navbar .dropdown-menu {
+    border-radius: 10px;
+    border: none;
+}
+
+.navbar .dropdown-header {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+}
+
+.navbar .dropdown-item {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #0d6efd;
+}
+
+.navbar .dropdown-item i {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.navbar .dropdown-item.text-danger:hover {
+    background-color: #ffebee;
+    color: #dc3545;
+}
+
+/* Estilos para el encabezado hero */
+.hero-header {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    padding: 20px;
+}
+
+.hero-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-header p {
+    font-size: 1.25rem;
+}
+
+.header-info {
+    display: flex;
+    /* Asegura que se utilice Flexbox */
+    flex-direction: column;
+    /* Centra los elementos en columna */
+    justify-content: center;
+    /* Centra verticalmente */
+    align-items: center;
+    /* Centra horizontalmente */
+    max-width: 100%;
+    /* Elimina la restricción de ancho */
+    margin: 0 auto;
+    /* Asegura que el contenido esté centrado */
+}
+
+/* Estilos para las secciones de características */
+.feature-section {
+    background-color: #f9f9f9;
+}
+
+.feature-item {
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la sección de imágenes representativas */
+.image-section {
+    padding: 5rem 0;
+    background-color: #f9f9f9;
+}
+
+.image-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* Asegura que ambas tarjetas tengan la misma altura */
+}
+
+.image-card:hover {
+    transform: translateY(-5px);
+}
+
+.image-card img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    /* Se ajusta al tamaño completo del contenedor */
+    margin-bottom: 20px;
+}
+
+.image-card h3 {
+    margin-top: 15px;
+    font-size: 1.75rem;
+    /* Tamaño de texto más grande */
+}
+
+.image-card p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Aseguramos que las imágenes estén centradas dentro de la sección */
+.image-section .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-section .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.col-md-6 {
+    flex: 1 0 48%;
+    /* Asegura que ambos elementos ocupen el mismo espacio */
+}
+
+/* Estilos para el CTA */
+.cta-section {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+}
+
+.cta-section p {
+    font-size: 1.25rem;
+}
+
+/* Mejorar la apariencia de la barra de navegación */
+.navbar {
+    background: linear-gradient(45deg, #4CAF50, #388E3C);
+    /* Fondo con gradiente */
+    padding: 15px 30px;
+    /* Un poco más de espacio para mejorar la estética */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra para darle profundidad */
+}
+
+/* Logo de la barra */
+.navbar .navbar-brand {
+    font-size: 1.75rem;
+    /* Aumentar tamaño de la fuente del logo */
+    font-weight: 700;
+    /* Hacer el logo más destacable */
+    letter-spacing: 1px;
+}
+
+/* Alineación del dropdown y la información del usuario */
+.navbar .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Alineación del menú desplegable */
+.nav-item {
+    margin-left: 15px;
+    /* Espacio entre los elementos del menú */
+}
+
+.nav-link {
+    font-size: 1rem;
+    /* Tamaño de la fuente para el texto */
+    color: white;
+    /* Color blanco para que sea legible */
+    font-weight: 500;
+    text-transform: uppercase;
+    /* Letras en mayúsculas para darle un toque más moderno */
+    transition: color 0.3s ease-in-out;
+    /* Transición suave cuando se pasa el mouse */
+}
+
+.nav-link:hover {
+    color: #81c784;
+    /* Color suave en el hover para mayor interactividad */
+}
+
+/* Estilo para los íconos en el dropdown */
+.navbar .dropdown-toggle i {
+    font-size: 1.6rem;
+    /* Tamaño más grande de los íconos */
+}
+
+/* Estilo del dropdown */
+.dropdown-menu {
+    border-radius: 8px;
+    /* Bordes redondeados para un estilo más limpio */
+    border: none;
+    background-color: #ffffff;
+    /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+/* Estilos para los elementos del dropdown */
+.dropdown-item {
+    font-size: 1rem;
+    color: #333;
+    padding: 10px 15px;
+    /* Espaciado adecuado */
+    transition: background-color 0.3s ease;
+    /* Transición suave al pasar el mouse */
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+    /* Fondo suave al pasar el mouse */
+    color: #4CAF50;
+    /* Color verde claro en el hover */
+}
+
+/* Mejorar la visibilidad de las opciones de "Cerrar Sesión" */
+.dropdown-item.text-danger {
+    font-weight: 600;
+    color: #d9534f;
+}
+
+.dropdown-item.text-danger:hover {
+    background-color: #f8d7da;
+}
+
+/* Estilos para el ícono del toggle del menú en dispositivos móviles */
+.navbar .navbar-toggler-icon {
+    background-color: white;
+    /* Ícono de menú visible */
+}
+
+/* Agregar un borde inferior a la barra para darle un toque más moderno */
+.navbar {
+    border-bottom: 2px solid #388E3C;
 }

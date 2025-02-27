@@ -1,15 +1,12 @@
 <?php
 session_start();
 include '../db/conexion.php';
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
-
     $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE email = ?");
     $stmt->execute([$email]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
-
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['usuario'] = $user['nombre'];
         $_SESSION['rol'] = $user['rol'];
@@ -20,24 +17,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Exportación de Flores</title>
     <link rel="stylesheet" href="/Expor_Flores/CSS/estilos.css">
 </head>
+
 <body>
-<nav class="navbar navbar-light bg-primary p-3">
-        <a href="index.php" class="btn btn-light">⬅ Volver</a>
+    <nav class="navbar navbar-light bg-primary p-3">
+        <a href="index.php" class="btn btn-light"> ⬅ Volver</a>
         <span class="navbar-brand mx-auto text-white fw-bold"></span>
     </nav>
     <div class="container d-flex justify-content-center align-items-center vh-100">
         <div class="card custom-card p-4 text-center" style="width: 400px;">
             <div class="mb-3">
-                <span style="font-size: 60px;">👤</span>
+                <span style="font-size: 60px;"> 👤 </span>
             </div>
             <h2 class="text-center text-primary">Iniciar Sesión</h2>
             <form action="login.php" method="POST">
@@ -56,4 +54,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </div>
 </body>
+
 </html>
